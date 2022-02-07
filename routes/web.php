@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +34,4 @@ Route::get('/gallery', function () {
     ]);
 });
 
+Route::resource('/contacts', ContactController::class);
